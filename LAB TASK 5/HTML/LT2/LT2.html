@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admission Form</title>
+    <link rel="stylesheet" href="LT2.css">
+</head>
+
+<body>
+
+    <h1>University Admission Form</h1>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend><strong>Personal Information</strong></legend>
+
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" maxlength="30" required><br><br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" maxlength="30" required><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label class="form-inline-label">Gender:</label>
+
+            <div class="gender-group" role="radiogroup" aria-labelledby="gender-label">
+            <span class="gender-option">
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+            </span>
+
+            <span class="gender-option">
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </span>
+
+            <span class="gender-option">
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+            </span>
+            </div>
+
+
+            <br>
+        
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Academic Information</strong></legend>
+
+            <label for="hsc">HSC/Equivalent GPA:</label>
+            <input type="text" id="hsc" name="hsc" maxlength="4" required><br><br>
+
+            <label for="ssc">SSC/Equivalent GPA:</label>
+            <input type="text" id="ssc" name="ssc" maxlength="4" required><br><br>
+
+            <label for="department">Preferred Department:</label>
+            <select id="department" name="department" required>
+                <option value="">-- Select Department --</option>
+                <option value="CSE">Computer Science & Engineering</option>
+                <option value="EEE">Electrical & Electronic Engineering</option>
+                <option value="BBA">Bachelor of Business Administration</option>
+                <option value="ENG">English</option>
+                <option value="PHARM">Pharmacy</option>
+            </select>
+            <br><br>
+
+            <label>Areas of Interest:</label><br>
+            <input type="checkbox" id="ai" name="interest" value="AI">
+            <label for="ai">Artificial Intelligence</label><br>
+
+            <input type="checkbox" id="robotics" name="interest" value="Robotics">
+            <label for="robotics">Robotics</label><br>
+
+            <input type="checkbox" id="networking" name="interest" value="Networking">
+            <label for="networking">Networking</label><br>
+
+            <input type="checkbox" id="business" name="interest" value="Business">
+            <label for="business">Business</label><br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Document Submission</strong></legend>
+
+            <label for="photo">Upload Passport Size Photo:</label>
+            <input type="file" id="photo" name="photo" required><br><br>
+
+            <label for="transcript">Upload Academic Transcript:</label>
+            <input type="file" id="transcript" name="transcript" required><br><br>
+
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Reset Form">
+
+    </form>
+
+</body>
+</html>
